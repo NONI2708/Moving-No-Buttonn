@@ -6,17 +6,23 @@
   <body>
     <div class="container">
       <div>
-        <h1 class="header_text">Yeeyy ! Finally</h1>
+        <h1 class="header_text">Yeeyy! Finally</h1>
       </div>
       <div class="gif_container">
         <img
           src="https://i.postimg.cc/ydj8MGT3/bear-kiss-bear-kisses.gif"
-          alt="Cute animated illustration"
+          alt="Cute animated illustration of bears kissing"
         />
       </div>
-      <button class="btn" id="yesButton" onclick="nextPage()">
-        I LOVE U 
+      <button class="btn" id="loveButton" onclick="nextPage()" aria-label="Proceed to the next page">
+        I LOVE U
       </button>
     </div>
+
+    <script>
+      function nextPage() {
+        window.location.href = "secondPage.html"; // Redirect to the second page
+      }
+    </script>
   </body>
 </html>
